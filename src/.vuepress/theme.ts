@@ -7,7 +7,7 @@ export default hopeTheme({
   hostname: "https://vuepress-theme-hope-docs-demo.netlify.app",
 
   author: {
-    name: "Mr.Hope",
+    name: "DoctorReid",
     url: "https://mister-hope.com",
   },
 
@@ -15,7 +15,7 @@ export default hopeTheme({
 
   logo: "https://theme-hope-assets.vuejs.press/logo.svg",
 
-  repo: "vuepress-theme-hope/vuepress-theme-hope",
+  // repo: "vuepress-theme-hope/vuepress-theme-hope",
 
   docsDir: "src",
 
@@ -31,9 +31,9 @@ export default hopeTheme({
 
       displayFooter: true,
 
-      metaLocales: {
-        editLink: "Edit this page on GitHub",
-      },
+      // metaLocales: {
+      //   editLink: "Edit this page on GitHub",
+      // },
     },
 
     /**
@@ -51,9 +51,9 @@ export default hopeTheme({
       displayFooter: true,
 
       // page meta
-      metaLocales: {
-        editLink: "在 GitHub 上编辑此页",
-      },
+      // metaLocales: {
+      //   editLink: "在 GitHub 上编辑此页",
+      // },
     },
   },
 
@@ -67,13 +67,13 @@ export default hopeTheme({
   plugins: {
     // Note: This is for testing ONLY!
     // You MUST generate and use your own comment service in production.
-    comment: {
-      provider: "Giscus",
-      repo: "vuepress-theme-hope/giscus-discussions",
-      repoId: "R_kgDOG_Pt2A",
-      category: "Announcements",
-      categoryId: "DIC_kwDOG_Pt2M4COD69",
-    },
+    // comment: {
+    //   provider: "Giscus",
+    //   repo: "vuepress-theme-hope/giscus-discussions",
+    //   repoId: "R_kgDOG_Pt2A",
+    //   category: "Announcements",
+    //   categoryId: "DIC_kwDOG_Pt2M4COD69",
+    // },
 
     components: {
       components: ["Badge", "VPCard"],

@@ -20,7 +20,29 @@ export const zhNavbar = navbar([
       {
         text: "功能说明",
         icon: "lightbulb",
-        link: "docs"
+        prefix: "docs",
+        children: [
+          {
+            text: "功能-一条龙",
+            link: "feat_one_dragon"
+          },
+          {
+            text: "功能-自动战斗",
+            link: "feat_auto_battle"
+          },
+          {
+            text: "功能-自定义指令",
+            link: "feat_custom_op"
+          },
+          {
+            text: "功能-战斗助手",
+            link: "feat_battle_assistant"
+          },
+          {
+            text: "功能-零号空洞",
+            link: "feat_hollow_zero"
+          }
+        ]
       },
     ],
   }

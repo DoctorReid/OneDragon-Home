@@ -12,7 +12,7 @@ tagline: 开源 免费 用于学习交流的图像识别项目
 actions:
   - text: 绝区零
     icon: z
-    link: ./zzz/
+    link: ./zzz/zh/home
     
 copyright: MIT Licensed, Copyright © 2024-present DoctorReid
 footer: Theme by <a href="https://theme-hope.vuejs.press/" target="_blank">VuePress Theme Hope</a>

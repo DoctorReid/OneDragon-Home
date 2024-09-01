@@ -5,7 +5,25 @@ author: DoctorReid
 date: 2024-09-01
 ---
 
+
+# 项目
+
+本项目适用于 Windows PC端
+
+如果觉得项目对你有帮助，不妨到[Github主页](https://github.com/DoctorReid/ZenlessZoneZero-OneDragon)点个Star
+
 ![应用展示](/images/zzz/zzz_app.png)
+<div align="center">
+    <div>
+        <img alt="platform" src="https://img.shields.io/badge/platform-Windows-blueviolet">
+        <img alt="commit" src="https://img.shields.io/github/commit-activity/m/DoctorReid/ZenlessZoneZero-OneDragon?color=blue">
+    </div>
+    <div>
+        <img alt="stars" src="https://img.shields.io/github/stars/DoctorReid/ZenlessZoneZero-OneDragon?style=social">
+        <img alt="GitHub all releases" src="https://img.shields.io/github/downloads/DoctorReid/ZenlessZoneZero-OneDragon/total?style=social">
+    </div>
+    <br>
+</div>
 
 # 支持功能
 
@@ -14,6 +32,10 @@ date: 2024-09-01
 - **日常：** 完成每日任务，收派委托，刮刮乐
 - **打本：** 每日副本、周本
 - **空洞：** 自动空洞。支持通关、速刷、领取业绩后退出
+
+# 快速开始
+
+点击这里看看[如何安装和使用吧](./quickstart.md)
 
 # 免责声明
 

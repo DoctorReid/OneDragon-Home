@@ -9,7 +9,6 @@ export default defineUserConfig({
     "/": {
       lang: "zh-CN",
       title: "一条龙小助手",
-      description: "A docs demo for vuepress-theme-hope",
     },
   },
 
