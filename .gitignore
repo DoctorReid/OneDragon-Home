@@ -1,0 +1,5 @@
+# 开发过程产生的临时文件
+.idea/
+node_modules/
+src/.vuepress/.cache/
+src/.vuepress/.temp/
