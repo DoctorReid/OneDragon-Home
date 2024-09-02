@@ -41,9 +41,24 @@ export const zhNavbar = navbar([
           {
             text: "功能-零号空洞",
             link: "feat_hollow_zero"
+          },
+          {
+            text: "功能-手柄支持",
+            link: "feat_gamepad"
           }
         ]
       },
     ],
+  },
+  {
+    text: "其它",
+    prefix: "/other/zh",
+    children: [
+      {
+        text: "Github访问指南",
+        icon: "globe",
+        link: "visit_github"
+      }
+    ]
   }
 ]);

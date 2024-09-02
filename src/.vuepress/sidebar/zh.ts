@@ -1,26 +1,47 @@
 import { sidebar } from "vuepress-theme-hope";
 
 export const zhSidebar = sidebar({
-  "/zh/": [
-    "",
-    "portfolio",
+  "/zzz/zh/": [
     {
-      text: "案例",
-      icon: "laptop-code",
-      prefix: "demo/",
-      link: "demo/",
-      children: "structure",
+      text: "简介",
+      icon: "home",
+      link: "home",
     },
     {
-      text: "文档",
-      icon: "book",
-      prefix: "guide/",
-      children: "structure",
+      text: "快速开始",
+      icon: "rocket",
+      link: "quickstart",
     },
     {
-      text: "幻灯片",
-      icon: "person-chalkboard",
-      link: "https://plugin-md-enhance.vuejs.press/zh/guide/content/revealjs/demo.html",
+      text: "功能说明",
+      icon: "lightbulb",
+      prefix: "docs",
+      children: [
+        {
+          text: "功能-一条龙",
+          link: "feat_one_dragon"
+        },
+        {
+          text: "功能-自动战斗",
+          link: "feat_auto_battle"
+        },
+        {
+          text: "功能-自定义指令",
+          link: "feat_custom_op"
+        },
+        {
+          text: "功能-战斗助手",
+          link: "feat_battle_assistant"
+        },
+        {
+          text: "功能-零号空洞",
+          link: "feat_hollow_zero"
+        },
+        {
+          text: "功能-手柄支持",
+          link: "feat_gamepad"
+        }
+      ],
     },
   ],
 });
