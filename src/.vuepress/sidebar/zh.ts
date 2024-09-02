@@ -43,5 +43,10 @@ export const zhSidebar = sidebar({
         }
       ],
     },
+    {
+      text: "设置说明",
+      icon: "book",
+      link: "config"
+    },
   ],
 });

@@ -48,6 +48,11 @@ export const zhNavbar = navbar([
           }
         ]
       },
+      {
+        text: "设置说明",
+        icon: "book",
+        link: "config"
+      },
     ],
   },
   {
