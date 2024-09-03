@@ -506,6 +506,255 @@ operations:
 |`朱鸢-子弹数`|左上角|截图时间| | `![朱鸢-子弹数, 0, 999]{7, 10}` <br> 当前子弹数小于7 可以用特殊攻击不溢出 |
 |`青衣-电压`|左上角|截图时间| | `[青衣-电压, 0, 999]{75, 100}` <br> 当前已经可以打重击了 |
 
+#### 2.1.2.默认模版使用的自定义状态
+
+默认模版中，使用了一些自定义状态，用于优化战斗流程。 这些是模版里进行设置，且需要在状态判断中配合使用的，不是脚本运行时自动附带的。
+
+如果你想用，可以引用模版，或者参考模版和下述例子自己设置对应的状态。
+
+##### 2.1.2.1.自定义-黄光切人
+
+黄光切人时设置；不同角色格挡攻击后摇时间不同，由角色模版控制等待多长时间进行后续指令
+
+<details>
+<summary> 设置例子 </summary>
+
+```yaml title="双反模板-击破.sample.yml"
+handlers:
+  - states: "[后台-2-击破]"
+    operations:
+      - operation_template: "双反-上一个"
+      - op_name: "设置状态"
+        data: [ "自定义-黄光切人" ]
+  - states: "[后台-1-击破]"
+    operations:
+      - operation_template: "双反-下一个"
+      - op_name: "设置状态"
+        data: [ "自定义-黄光切人" ]
+```
+</details>
+
+<details>
+<summary> 使用例子 </summary>
+
+```yaml title="站场模板-朱鸢.sample.yml"
+handlers:
+  - states: "[前台-朱鸢]"
+    sub_states:
+      # 格挡出场后
+      - states: "[自定义-黄光切人]"
+        operations:
+          - op_name: "按键-普通攻击"
+            pre_delay: 0.2
+            post_delay: 1.5
+          - op_name: "清除状态"
+            state: "自定义-黄光切人"
+          - op_name: "设置状态"
+            state: "自定义-临时站场"
+```
+</details>
+
+##### 2.1.2.2.自定义-红光闪避
+
+红光时设置；不同角色闪避攻击后摇时间不同，由角色模版控制等待多长时间进行后续指令
+
+<details>
+<summary> 设置例子 </summary>
+
+```yaml title="闪A模板-通用.sample.yml"
+handlers:
+  - states: ""
+    operations:
+      - op_name: "按键-闪避"
+        post_delay: 0.2
+      - op_name: "按键-普通攻击"
+      - op_name: "设置状态"
+        state: "自定义-红光闪避"
+```
+</details>
+
+<details>
+<summary> 使用例子 </summary>
+
+```yaml title="站场模板-朱鸢.sample.yml"
+handlers:
+  - states: "[前台-朱鸢]"
+    sub_states:
+    # 闪避后
+    - states: "[自定义-红光闪避]"
+      operations:
+        - op_name: "按键-普通攻击"
+          pre_delay: 0.8
+          post_delay: 1
+        - op_name: "按键-普通攻击"
+          post_delay: 1
+          repeat: 2
+        - op_name: "清除状态"
+          state: "自定义-红光闪避"
+```
+</details>
+
+##### 2.1.2.3.自定义-快速支援换人
+
+快速支援换人时设置；不同角色快速支援攻击后摇时间不同，由角色模版控制等待多长时间进行后续指令
+
+<details>
+<summary> 设置例子 </summary>
+
+```yaml title="击破站场-强攻速切.sample.yml"
+scenes:
+  - triggers: [ "按键可用-快速支援" ]
+    interval: 1
+    handlers:
+      - states: "[按键可用-快速支援]"
+        operations:
+          - op_name: "按键-切换角色-下一个"
+          - op_name: "设置状态"
+            state: "自定义-快速支援换人"
+```
+</details>
+
+<details>
+<summary> 使用例子 </summary>
+
+```yaml title="站场模板-朱鸢.sample.yml"
+handlers:
+  - states: "[前台-朱鸢]"
+    sub_states:
+    - states: "[自定义-快速支援换人]"
+      operations:
+        - op_name: "等待秒数"
+          data: [ "0.5" ]
+        - op_name: "清除状态"
+          data: [ "自定义-快速支援换人" ]
+        - op_name: "设置状态"
+          state: "自定义-临时站场"
+```
+</details>
+
+##### 2.1.2.4.自定义-连携换人
+
+连携换人时设置；不同角色快速支援攻击后摇时间不同，由角色模版控制等待多长时间进行后续指令；同时可用于失衡判断
+
+<details>
+<summary> 设置例子 </summary>
+
+```yaml title="连携模板-击破.sample.yml"
+handlers:
+  - states: "[连携技-1-击破]"
+    operations:
+      - op_name: "按键-连携技-左"
+      - op_name: "设置状态"
+        state: "自定义-连携换人"
+  - states: "[连携技-2-击破]"
+    operations:
+      - op_name: "按键-连携技-右"
+      - op_name: "设置状态"
+        state: "自定义-连携换人"
+```
+</details>
+
+<details>
+<summary> 使用例子 </summary>
+
+```yaml title="站场模板-朱鸢.sample.yml"
+handlers:
+  - states: "[前台-朱鸢]"
+    sub_states:
+    - states: "[自定义-连携换人]"
+      operations:
+        - op_name: "等待秒数"
+          data: [ "1.5" ]
+```
+</details>
+
+##### 2.1.2.5.自定义-临时站场
+
+想插队站场的时候设置；例如朱鸢黄光出来的时候打几发子弹再切回击破，避免溢出
+
+<details>
+<summary> 设置例子 </summary>
+
+```yaml title="站场模板-朱鸢.sample.yml"
+handlers:
+  - states: "[前台-朱鸢]"
+    sub_states:
+    # 格挡出场后
+    - states: "[自定义-黄光切人]"
+      operations:
+        - op_name: "按键-普通攻击"
+          pre_delay: 0.2
+          post_delay: 1.5
+        - op_name: "清除状态"
+          state: "自定义-黄光切人"
+        - op_name: "设置状态"
+          state: "自定义-临时站场"
+```
+</details>
+
+<details>
+<summary> 使用例子 </summary>
+
+```yaml title="击破站场-强攻速切.sample.yml"
+scenes:
+  - triggers: [ ]
+    interval: 0.02
+    handlers:
+      # 刚开始未识别到角色时候不要乱切
+      - state_template: "通用模板-锁定敌人"
+      - state_template: "站场模板-未识别角色"
+      - states: "[自定义-黄光切人, 0, 2] | [自定义-红光闪避, 0, 2] | [自定义-临时站场]"
+        sub_states:
+          - state_template: "站场模板-全角色"
+```
+</details>
+
+##### 2.1.2.6.自定义-动作不打断
+
+想指令不被触发器打断时设置，例如青衣在打重击的时候不因为闪光打断
+
+<details>
+<summary> 设置例子 </summary>
+
+```yaml title="站场模板-青衣.sample.yml"
+handlers:
+  - states: "[前台-青衣]"
+    sub_states:
+    - states: "[青衣-电压, 0, 999]{75, 101}"
+      operations:
+        - op_name: "设置状态"
+          state: "自定义-动作不打断"
+          value: 1
+        - op_name: "按键-普通攻击"
+          way: "按下"
+          press: 3.5
+        - op_name: "清除状态"
+          state: "自定义-动作不打断"
+        - op_name: "清除状态"
+          state:  "自定义-青衣-普攻次数"
+```
+</details>
+
+<details>
+<summary> 使用例子 </summary>
+
+```yaml title="击破站场-强攻速切.sample.yml"
+scenes:
+  - triggers: [ "闪避识别-黄光", "闪避识别-红光", "闪避识别-声音" ]
+    interval: 1
+    handlers:
+      - states: "![自定义-动作不打断, 0, 999]{1, 1} & [闪避识别-黄光]"
+        sub_states:
+          - state_template: "双反模板-强攻"
+          - state_template: "双反模板-击破"
+          - state_template: "双反模板-下一个"
+      - states: "![自定义-动作不打断, 0, 999]{1, 1} & ([闪避识别-红光] | [闪避识别-声音])"
+        sub_states:
+          - state_template: "闪A模板-全角色"
+```
+</details>
+
+
 ### 2.2.可用指令
 
 |指令名称 (op_name)|参数|
@@ -518,7 +767,7 @@ operations:
 |按键-终结技|同上|
 |按键-连携技-左|同上|
 |按键-连携技-右|同上|
-|按键-连携技-取消|同上|
+|按键-连携技-取消|同上。这个按键比较怪，需要按下一段时间才有效|
 |按键-快速支援|同上|
 |按键-移动-前|同上|
 |按键-移动-后|同上|
