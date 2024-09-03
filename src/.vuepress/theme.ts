@@ -153,7 +153,9 @@ export default hopeTheme({
     },
 
     docsearch: {
-
+      apiKey: "0e8ed02777ddb77a5963317e73849ba4",
+      appId: "MNVBXM97ES",
+      indexName: "one-dragon"
     }
     // Install @vuepress/plugin-pwa and uncomment these if you want a PWA
     // pwa: {
