@@ -63,6 +63,11 @@ export const zhNavbar = navbar([
         text: "Github访问指南",
         icon: "globe",
         link: "visit_github"
+      },
+      {
+        text: "默认管理员启动",
+        icon: "user-tie",
+        link: "run_as_admin_by_default"
       }
     ]
   }
