@@ -8,7 +8,7 @@ export default hopeTheme({
 
   author: {
     name: "DoctorReid",
-    url: "https://mister-hope.com",
+    url: "https://one-dragon.org",
   },
 
   iconAssets: "fontawesome-with-brands",
@@ -156,6 +156,13 @@ export default hopeTheme({
       apiKey: "0e8ed02777ddb77a5963317e73849ba4",
       appId: "MNVBXM97ES",
       indexName: "one-dragon"
+    },
+
+    sitemap: {
+      hostname: 'https://one-dragon.org'
+    },
+    seoPlugin: {
+      hostname: 'https://one-dragon.org'
     }
     // Install @vuepress/plugin-pwa and uncomment these if you want a PWA
     // pwa: {
