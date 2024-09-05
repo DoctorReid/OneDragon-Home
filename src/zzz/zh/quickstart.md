@@ -10,7 +10,7 @@ date: 2024-09-01
 
 ## 1.安装
 
-脚本请存放在 <font color="red"><b>全英文，不含空格的路径</b></font> 下，使用 <font color="red"><b>管理员权限</b></font> 运行。
+脚本请存放在 <span style="color:red"><strong>全英文，不含空格的路径</strong></span> 下，使用 <span style="color:red"><strong>管理员权限</strong></span> 运行。
 
 > [如何默认管理员运行](../../other/zh/run_as_admin_by_default.md)
 
@@ -22,9 +22,9 @@ date: 2024-09-01
 
 1. 从 [最新 Release](https://github.com/DoctorReid/ZenlessZoneZero-OneDragon/releases/latest) 中下载 `ZenlessZoneZero-OneDragon-X.Y.Z.zip` (X.Y.Z 为版本号)
 2. 如果你无法访问Github，或者下载速度慢，可以参考 [如何访问Github](../../other/zh/visit_github.md)，或者你可以加入 QQ群 861603314，从群文件中下载。
-3. 下载后解压，使用 <font color="red"><b>管理员权限</b></font> 运行 `installer.exe`
+3. 下载后解压，使用 <span style="color:red"><strong>管理员权限</strong></span> 运行 `installer.exe`
 4. 安装器中，点击一键安装即可。 
-5. 安装完成后，在安装器上点击`启动一条龙`，或 <font color="red"><b>右键管理员权限</b></font> 运行 `app.bat`
+5. 安装完成后，在安装器上点击`启动一条龙`，或 <span style="color:red"><strong>右键管理员权限</strong></span> 运行 `app.bat`
 
 ### 1.2.使用安装器 + 已有的 anaconda（推荐）
 
@@ -41,7 +41,7 @@ conda create --name zzz-od python=3.11
 你的目录\anaconda\envs\zzz-od\pythonw.exe
 ```
 5. 安装器中点击 `运行依赖-默认安装`，等待完成。
-6. 安装完成后，安装器上点击`启动一条龙`，或 <font color="red"><b>右键管理员权限</b></font> 运行 `app.bat`
+6. 安装完成后，安装器上点击`启动一条龙`，或 <span style="color:red"><strong>右键管理员权限</strong></span> 运行 `app.bat`
 
 ### 1.3.使用源码运行
 
