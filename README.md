@@ -6,9 +6,9 @@
 
 [nodejs v20.17.0](https://nodejs.org/dist/v20.17.0/node-v20.17.0-win-x64.zip)
 
-清华源
+淘宝源
 ```npm
-npm config set registry https://pypi.tuna.tsinghua.edu.cn/simple
+npm config set registry https://registry.npmmirror.com
 ```
 
 初始化
