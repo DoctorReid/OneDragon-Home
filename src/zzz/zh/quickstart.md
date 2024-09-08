@@ -10,9 +10,7 @@ date: 2024-09-01
 
 ## 1.安装
 
-脚本请存放在 <span style="color:red"><strong>全英文，不含空格的路径</strong></span> 下，使用 <span style="color:red"><strong>管理员权限</strong></span> 运行。
-
-> [如何默认管理员运行](../../other/zh/run_as_admin_by_default.md)
+脚本请存放在 <span style="color:red"><strong>全英文的路径</strong></span> 下，脚本会
 
 ### 1.1.使用安装器（推荐）
 
@@ -22,9 +20,9 @@ date: 2024-09-01
 
 1. 从 [最新 Release](https://github.com/DoctorReid/ZenlessZoneZero-OneDragon/releases/latest) 中下载 `ZenlessZoneZero-OneDragon-X.Y.Z.zip` (X.Y.Z 为版本号)
 2. 如果你无法访问Github，或者下载速度慢，可以参考 [如何访问Github](../../other/zh/visit_github.md)，或者你可以加入 QQ群 861603314，从群文件中下载。
-3. 下载后解压，使用 <span style="color:red"><strong>管理员权限</strong></span> 运行 `installer.exe`
+3. 下载后解压，运行 `OneDragon Installer.exe`
 4. 安装器中，点击一键安装即可。 
-5. 安装完成后，在安装器上点击`启动一条龙`，或 <span style="color:red"><strong>右键管理员权限</strong></span> 运行 `app.bat`
+5. 安装完成后，在安装器上点击`启动一条龙`，或运行 `OneDragon Launcher.exe`
 
 ### 1.2.使用安装器 + 已有的 anaconda（推荐）
 
@@ -41,7 +39,7 @@ conda create --name zzz-od python=3.11
 你的目录\anaconda\envs\zzz-od\pythonw.exe
 ```
 5. 安装器中点击 `运行依赖-默认安装`，等待完成。
-6. 安装完成后，安装器上点击`启动一条龙`，或 <span style="color:red"><strong>右键管理员权限</strong></span> 运行 `app.bat`
+6. 安装完成后，安装器上点击`启动一条龙`，或运行 `OneDragon Launcher.exe`
 
 ### 1.3.使用源码运行
 
@@ -51,7 +49,7 @@ conda create --name zzz-od python=3.11
 2. `git clone git@github.com:DoctorReid/ZenlessZoneZero-OneDragon.git`
 3. `pip install -r requirements-prod.txt`
 4. 运行 （以下二选一）
-    - 复制 `env.sample.bat`，重命名为 `env.bat`，并修改内容为你的虚拟环境的 python 路径，使用 `app.bat` 运行。
+    - 复制 `env.sample.bat`，重命名为 `env.bat`，并修改内容为你的虚拟环境的 python 路径，使用 `OneDragon Launcher.exe` 运行。
     - 将`src`文件夹加入环境变量`PYTHONPATH`，执行 `python src/zzz_od/gui/app.py` 。
 
 ## 2.使用前须知
@@ -67,9 +65,10 @@ conda create --name zzz-od python=3.11
    - 驱动层面 - 显卡驱动控制面板里的游戏滤镜等。
    - 设备层面 - 显示器的护眼模式、色彩模式、色温调节、HDR 等。
 6. 游戏内「设置」-「其他」-「字体选项」选择「全局细体」，可以有效避免文本识别不准的问题。
-7. 游戏内的副本开启沉浸模式，避免刷本时被凌晨过夜卡住。
-8. 完成脚本设置，主要是改键部分，见[设置说明](config.md)
-9. 使用过程中请多查看 [各功能说明](./docs/feat_one_dragon.md)
+7. 游戏内「设置」-「输入」-「镜头自动跟随转动」选择「开启」，可以让自动战斗能锁定敌人视角。
+8. 游戏内的副本开启沉浸模式，避免刷本时被凌晨过夜卡住。
+9. 完成脚本设置，主要是改键部分，见[设置说明](config.md)
+10. 使用过程中请多查看 [各功能说明](./docs/feat_one_dragon.md)
 
 ## 3.常见问题
 

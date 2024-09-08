@@ -64,6 +64,11 @@ export const zhNavbar = navbar([
         text: "默认管理员启动",
         icon: "user-tie",
         link: "run_as_admin_by_default"
+      },
+      {
+        text: "Windows任务计划程序",
+        icon: "clock",
+        link: "windows_plan"
       }
     ]
   }
