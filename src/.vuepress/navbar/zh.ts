@@ -27,16 +27,12 @@ export const zhNavbar = navbar([
             link: "feat_one_dragon"
           },
           {
-            text: "功能-自动战斗",
-            link: "feat_auto_battle"
+            text: "功能-战斗助手",
+            link: "feat_battle_assistant"
           },
           {
             text: "功能-自定义指令",
             link: "feat_custom_op"
-          },
-          {
-            text: "功能-战斗助手",
-            link: "feat_battle_assistant"
           },
           {
             text: "功能-零号空洞",
