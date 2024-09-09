@@ -27,8 +27,7 @@ title: 绝区零 一条龙
 
 - **战斗：** 一键自动战斗
 - **闪避：** 支持声音、图像识别
-- **日常：** 完成每日任务，收派委托，刮刮乐
-- **打本：** 每日副本、周本
+- **日常：** 影像店、刮刮乐、咖啡店、刷本等全日常
 - **空洞：** 自动空洞。支持通关、速刷、领取业绩后退出
 
 ## 快速开始
@@ -49,7 +48,7 @@ title: 绝区零 一条龙
 
 感谢所有参与到开发的朋友们~
 
-![Contributors](https://contributors-img.web.app/image?repo=DoctorReid/ZenlessZoneZero-OneDragon&max=1314520&columns=15)
+![Contributors](https://contrib.rocks/image?repo=DoctorReid/ZenlessZoneZero-OneDragon)
 
 ## 赞助
 
