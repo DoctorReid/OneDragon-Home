@@ -71,5 +71,10 @@ export const zhNavbar = navbar([
         link: "windows_plan"
       }
     ]
+  },
+  {
+    text: "点赞",
+    icon: "heart",
+    link: "/other/zh/like",
   }
 ]);
