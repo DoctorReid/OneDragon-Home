@@ -27,6 +27,10 @@ export const zhNavbar = navbar([
             link: "feat_one_dragon"
           },
           {
+            text: "功能-零号空洞",
+            link: "feat_hollow_zero"
+          },
+          {
             text: "功能-战斗助手",
             link: "feat_battle_assistant"
           },
@@ -35,8 +39,8 @@ export const zhNavbar = navbar([
             link: "feat_custom_op"
           },
           {
-            text: "功能-零号空洞",
-            link: "feat_hollow_zero"
+            text: "功能-游戏助手",
+            link: "feat_game_assistant"
           },
           {
             text: "功能-手柄支持",
