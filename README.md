@@ -21,6 +21,11 @@ npm install
 npm run docs:dev
 ```
 
+更新版本
+```npm
+npx vp-update
+```
+
 打包
 ```npm
 npm run docs:build

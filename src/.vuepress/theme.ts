@@ -79,17 +79,31 @@ export default hopeTheme({
       components: ["Badge", "VPCard"],
     },
 
+    markdownHint: {
+      // Enable hint container, true by default
+      hint: true,
+      // Enable gfm alert
+      alert: true,
+    },
+
+    markdownImage: {
+      // Enable figure
+      figure: true,
+      // Enable image lazyload
+      lazyload: true,
+      // Enable image mark
+      mark: true,
+      // Enable image size
+      size: true,
+    },
+
     // All features are enabled for demo, only preserve features you need here
     mdEnhance: {
-      alert: true,
       align: true,
       attrs: true,
       codetabs: true,
       component: true,
       demo: true,
-      figure: true,
-      imgLazyload: true,
-      imgSize: true,
       include: true,
       mark: true,
       plantuml: true,
@@ -161,7 +175,7 @@ export default hopeTheme({
     sitemap: {
       hostname: 'https://one-dragon.org'
     },
-    seoPlugin: {
+    seo: {
       hostname: 'https://one-dragon.org'
     }
     // Install @vuepress/plugin-pwa and uncomment these if you want a PWA
