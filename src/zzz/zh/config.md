@@ -1,8 +1,6 @@
 ---
 lang: zh-CN
 title: 设置说明
-author: DoctorReid
-date: 2024-09-02
 ---
 
 ## 1.游戏设置

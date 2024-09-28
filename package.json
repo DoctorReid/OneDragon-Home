@@ -12,7 +12,7 @@
   },
   "devDependencies": {
     "@vuepress/bundler-vite": "2.0.0-rc.15",
-    "@vuepress/plugin-docsearch": "2.0.0-rc.46",
+    "@vuepress/plugin-docsearch": "2.0.0-rc.45",
     "@vuepress/plugin-google-analytics": "2.0.0-rc.42",
     "@vuepress/plugin-markdown-hint": "2.0.0-rc.46",
     "@vuepress/plugin-markdown-image": "2.0.0-rc.46",

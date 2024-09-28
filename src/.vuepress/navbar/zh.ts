@@ -45,14 +45,27 @@ export const zhNavbar = navbar([
           {
             text: "功能-手柄支持",
             link: "feat_gamepad"
+          },
+          {
+            text: "设置说明",
+            link: "config"
           }
         ]
       },
       {
-        text: "设置说明",
-        icon: "book",
-        link: "config"
-      },
+        text: "自动战斗教程",
+        prefix: "auto_battle_guide",
+        children: [
+          {
+            text: "基础",
+            link: "basic/basic_01_yaml",
+          },
+          {
+            text: "朱鸢示例",
+            link: "zhu_yuan/zhu_yuan_01",
+          }
+        ]
+      }
     ],
   },
   {
