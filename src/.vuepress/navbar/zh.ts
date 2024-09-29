@@ -19,7 +19,6 @@ export const zhNavbar = navbar([
       },
       {
         text: "功能说明",
-        icon: "lightbulb",
         prefix: "docs",
         children: [
           {
@@ -58,7 +57,7 @@ export const zhNavbar = navbar([
         children: [
           {
             text: "基础",
-            link: "basic/basic_01_yaml",
+            link: "basic/basic_00_yaml",
           },
           {
             text: "朱鸢示例",

@@ -40,13 +40,55 @@ export const zhSidebar = sidebar({
         {
           text: "功能-手柄支持",
           link: "feat_gamepad"
-        }
+        },
+        {
+          text: "设置说明",
+          link: "config"
+        },
       ],
     },
     {
-      text: "设置说明",
+      text: "自动战斗教程",
       icon: "book",
-      link: "config"
+      prefix: "auto_battle_guide",
+      children: [
+        {
+          text: "基础",
+          link: "basic/basic_01_yaml",
+        },
+        {
+          text: "朱鸢示例",
+          link: "zhu_yuan/zhu_yuan_01",
+        }
+      ]
+    }
+  ],
+  "/zzz/zh/auto_battle_guide/basic/":[
+    {
+      text: "00-Yaml格式",
+      link: "basic_00_yaml",
+    },
+    {
+      text: "01-自动战斗简介",
+      link: "basic_01_intro",
+    },
+    {
+      text: "02-状态表达式",
+      link: "basic_02_states",
+    },
+    {
+      text: "03-操作指令数组",
+      link: "basic_03_operations",
+    },
+    {
+      text: "90-状态枚举",
+      link: "basic_90_states_enum",
     },
   ],
+  "/zzz/zh/auto_battle_guide/zhu_yuan/":[
+    {
+      text: "01-确定站场角色",
+      link: "zhu_yuan_01",
+    },
+  ]
 });
