@@ -42,6 +42,7 @@ title: 朱鸢配队教程-01-确定站场角色
 ```yaml
 scenes:
   - triggers: [ ]
+    interval: 0.02
     handlers:
       - states: "[前台-击破]"
         operations:
@@ -107,7 +108,7 @@ scenes:
 
 请戳这里学习 [场景](../basic/basic_02_scenes.md) 完成 `1.简介` 部分学习。
 
-上述例子中，就只有1个场景，该场景不需要任何触发，是用来处理普通连招的。可以暂不理解 triggers 部分。
+上述例子中，就只有1个场景，该场景不需要任何触发，是用来处理普通连招的。可以暂不理解 triggers和interval 部分。
 
 #### 3.2.2.处理方法数组 (handlers)
 
@@ -139,3 +140,33 @@ scenes:
 
 - 依然保持最后要切换到击破角色站场。
 - 手动按键触发切换角色后，让脚本识别当前是支援角色的话，就放一次强化特殊技，再切换回击破角色。
+
+<details>
+<summary>最终成果</summary>
+
+```yaml
+scenes:
+  - triggers: [ ]
+    interval: 0.02
+    handlers:
+      - states: "[前台-击破]"
+        operations:
+          - op_name: "按键-普通攻击"
+            post_delay: 0.2
+      - states: "[前台-支援]"
+        operations:
+          - op_name: "按键-特殊攻击"
+            post_delay: 0.2
+          - op_name: "按键-切换角色-上一个"
+            post_delay: 0.1
+      - states: "[后台-2-击破]"
+        operations:
+          - op_name: "按键-切换角色-上一个"
+            post_delay: 0.1
+      - states: "[后台-1-击破]"
+        operations:
+          - op_name: "按键-切换角色-下一个"
+            post_delay: 0.1
+```
+
+</details>

@@ -25,6 +25,7 @@ title: 朱鸢配队教程-02-角色连招
 ```yaml
 scenes:
   - triggers: [ ]
+    interval: 0.02
     handlers:
       - states: "[前台-击破]"
         sub_states:
@@ -39,7 +40,7 @@ scenes:
         - states: ""
           operations:
             - op_name: "按键-普通攻击"
-              post_delay: 0.02
+              post_delay: 0.05
       - states: "[后台-2-击破]"
         operations:
           - op_name: "按键-切换角色-上一个"
@@ -72,24 +73,25 @@ scenes:
 ```yaml
 scenes:
   - triggers: [ ]
+    interval: 0.02
     handlers:
       - states: "[前台-击破]"
         sub_states:
-        - states: "[按键可用-终结技]"
-          operations:
-            - op_name: "按键-终结技"
-              post_delay: 5
-        - states: "[按键可用-特殊攻击]"
-          operations:
-            - op_name: "按键-特殊攻击"
-              post_delay: 2
-        - states: ""
-          operations:
-            - op_name: "按键-普通攻击"
-              post_delay: 0.02
-              repeat: 200
-            - op_name: "按键-闪避"
-              post_delay: 0.05
+          - states: "[按键可用-终结技]"
+            operations:
+              - op_name: "按键-终结技"
+                post_delay: 5
+          - states: "[按键可用-特殊攻击]"
+            operations:
+              - op_name: "按键-特殊攻击"
+                post_delay: 2
+          - states: ""
+            operations:
+              - op_name: "按键-普通攻击"
+                post_delay: 0.05
+                repeat: 20
+              - op_name: "按键-闪避"
+                post_delay: 1
       - states: "[后台-2-击破]"
         operations:
           - op_name: "按键-切换角色-上一个"
@@ -160,3 +162,48 @@ scenes:
 ## 4.章节作业
 
 继续修改上述例子，在特殊技可用的情况下，让安比打出 3A+强化特殊技，普通情况依然是 3A+重击，并且两套连招都能流程循环执行。
+
+<details>
+<summary>最终成果</summary>
+
+```yaml
+scenes:
+  - triggers: [ ]
+    interval: 0.02
+    handlers:
+      - states: "[前台-击破]"
+        sub_states:
+        - states: "[按键可用-终结技]"
+          operations:
+            - op_name: "按键-终结技"
+              post_delay: 5
+        - states: "[按键可用-特殊攻击]"
+          operations:
+            - op_name: "按键-普通攻击"
+              post_delay: 0.05
+              repeat: 20
+            - op_name: "按键-特殊攻击"
+              post_delay: 0.05
+              repeat: 30
+            - op_name: "按键-普通攻击"
+              post_delay: 0.05
+              repeat: 30
+        - states: ""
+          operations:
+            - op_name: "按键-普通攻击"
+              post_delay: 0.05
+              repeat: 20
+            - op_name: "按键-普通攻击"
+              way: "按下"
+              press: 2
+      - states: "[后台-2-击破]"
+        operations:
+          - op_name: "按键-切换角色-上一个"
+            post_delay: 0.1
+      - states: "[后台-1-击破]"
+        operations:
+          - op_name: "按键-切换角色-下一个"
+            post_delay: 0.1
+```
+
+</details>
