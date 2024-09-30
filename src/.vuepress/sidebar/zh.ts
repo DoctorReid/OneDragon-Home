@@ -59,6 +59,10 @@ export const zhSidebar = sidebar({
         {
           text: "朱鸢示例",
           link: "zhu_yuan/zhu_yuan_01",
+        },
+        {
+          text: "冷知识",
+          link: "other/battle_knowledge",
         }
       ]
     }
@@ -73,12 +77,24 @@ export const zhSidebar = sidebar({
       link: "basic_01_intro",
     },
     {
-      text: "02-状态表达式",
-      link: "basic_02_states",
+      text: "02-场景",
+      link: "basic_02_scenes",
     },
     {
-      text: "03-操作指令数组",
-      link: "basic_03_operations",
+      text: "03-场景下的触发器",
+      link: "basic_03_triggers",
+    },
+    {
+      text: "04-场景下的处理方法",
+      link: "basic_04_handlers",
+    },
+    {
+      text: "05-状态表达式",
+      link: "basic_05_states",
+    },
+    {
+      text: "06-操作指令数组",
+      link: "basic_06_operations",
     },
     {
       text: "90-状态枚举",
@@ -89,6 +105,10 @@ export const zhSidebar = sidebar({
     {
       text: "01-确定站场角色",
       link: "zhu_yuan_01",
+    },
+    {
+      text: "02-角色连招",
+      link: "zhu_yuan_02",
     },
   ]
 });
