@@ -110,5 +110,9 @@ export const zhSidebar = sidebar({
       text: "02-角色连招",
       link: "zhu_yuan_02",
     },
+    {
+      text: "03-连携与快速支援",
+      link: "zhu_yuan_03",
+    },
   ]
 });

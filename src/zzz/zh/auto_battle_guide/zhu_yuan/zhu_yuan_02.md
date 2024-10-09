@@ -28,7 +28,7 @@ scenes:
     interval: 0.02
     handlers:
       - states: "[前台-击破]"
-        sub_states:
+        sub_handlers:
         - states: "[按键可用-终结技]"
           operations:
             - op_name: "按键-终结技"
@@ -53,9 +53,9 @@ scenes:
 
 </details>
 
-### 1.1.子状态(sub_states)
+### 1.1.子处理方法数组(sub_handlers)
 
-上述例子中我们使用了新的语法 `子状态(sub_states)`。
+上述例子中我们使用了新的语法 `子状态(sub_handlers)`。
 
 请戳这里学习 [处理方法](../basic/basic_04_handlers.md) 完成 `4.子处理方法数组` 部分学习。
 
@@ -76,7 +76,7 @@ scenes:
     interval: 0.02
     handlers:
       - states: "[前台-击破]"
-        sub_states:
+        sub_handlers:
           - states: "[按键可用-终结技]"
             operations:
               - op_name: "按键-终结技"
@@ -119,7 +119,7 @@ scenes:
     interval: 0.02
     handlers:
       - states: "[前台-击破]"
-        sub_states:
+        sub_handlers:
           - states: "[按键可用-终结技]"
             operations:
               - op_name: "按键-终结技"
@@ -184,7 +184,7 @@ scenes:
     interval: 0.02
     handlers:
       - states: "[前台-击破]"
-        sub_states:
+        sub_handlers:
         - states: "[按键可用-终结技]"
           operations:
             - op_name: "按键-终结技"

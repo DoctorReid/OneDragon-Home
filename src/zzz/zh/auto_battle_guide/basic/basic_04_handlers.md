@@ -41,7 +41,7 @@ title: 基础-04-场景下的处理方法
 
 ```yaml
 - states: "[闪避识别-黄光]"
-  sub_states:
+  sub_handlers:
     - states: "[前台-击破]"
       operations: ...
     - states: "[前台-强攻]"
