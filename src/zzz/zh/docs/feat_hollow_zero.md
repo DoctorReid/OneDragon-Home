@@ -8,11 +8,7 @@ author: DoctorReid
 
 ### 事件无响应
 
-遇到卡死时可以使用脚本的F11截图反馈到群里，截图保存在 `.debug/images` 文件夹中。
-
-截图应该包含具体的选项。
-
-另外，你也可以参考 `assets/game_data/hollow_zero/normal_event` 中的文件，添加该事件的响应。
+遇到卡死时可以使用脚本的F11截图反馈到群里，截图应该包含具体的选项，截图保存在 `.debug/images` 文件夹中。
 
 ### 运行后不进入空洞
 
