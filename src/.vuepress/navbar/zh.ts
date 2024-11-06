@@ -3,6 +3,41 @@ import { navbar } from "vuepress-theme-hope";
 export const zhNavbar = navbar([
   "/",
   {
+    text: "崩坏：星穹铁道",
+    icon: "train",
+    prefix: "/sr/zh",
+    children: [
+      {
+        text: "简介",
+        icon: "home",
+        link: "home"
+      },
+      {
+        text: "快速安装",
+        icon: "rocket",
+        link: "quickstart"
+      },
+      {
+        text: "功能说明",
+        prefix: "docs",
+        children: [
+          {
+            text: "功能-一条龙",
+            link: "feat_one_dragon"
+          },
+          {
+            text: "功能-锄大地",
+            link: "feat_world_patrol"
+          },
+          {
+            text: "功能-模拟宇宙",
+            link: "feat_sim_uni"
+          }
+        ]
+      }
+    ]
+  },
+  {
     text: "绝区零",
     icon: "z",
     prefix: "/zzz/zh",

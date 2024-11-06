@@ -10,6 +10,9 @@ bgImageStyle:
 heroText: 一条龙
 tagline: 开源 免费 用于学习交流的图像识别项目
 actions:
+  - text: 崩坏：星穹铁道
+    icon: train
+    link: ./sr/zh/home
   - text: 绝区零
     icon: z
     link: ./zzz/zh/home

@@ -1,8 +1,6 @@
 ---
 lang: zh-CN
 title: Github访问指南
-author: DoctorReid
-date: 2024-09-02
 ---
 
 如果在访问Github时遇到问题，不妨看看本页面。
@@ -17,7 +15,7 @@ date: 2024-09-02
 
 该工具可以让你方便切换hosts，来源 [SwitchHosts项目](https://github.com/oldj/SwitchHosts)
 
-[自带代理的下载链接](https://mirror.ghproxy.com/https://github.com/oldj/SwitchHosts/releases/download/v4.2.0/SwitchHosts_windows_portable_x64_4.2.0.6119.exe)
+[自带代理的下载链接](https://ghp.ci/https://github.com/oldj/SwitchHosts/releases/download/v4.2.0/SwitchHosts_windows_portable_x64_4.2.0.6119.exe)
 
 ### 1.2.切换hosts
 
@@ -44,7 +42,7 @@ __注意，这里仅做推荐，一切使用问题请找官方客服。购买代
 
 如果你没代理的情况下能访问Github，但下载内容速度较慢，可以尝试以下方法：
 
-1. 访问 https://mirror.ghproxy.com/
+1. 访问 https://ghp.ci/
 2. 在输入框粘贴 Github文件的下载链接
 3. 点击下载
 
