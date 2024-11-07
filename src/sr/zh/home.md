@@ -5,7 +5,7 @@ title: 崩坏：星穹铁道 一条龙
 
 ## 项目
 
-绝区零 基于图像识别的全自动小助手，用于 Windows PC端。
+基于图像识别的全自动小助手，用于 Windows PC端。
 
 如果觉得项目对你有帮助，不妨到[Github主页](https://github.com/DoctorReid/StarRailOneDragon)点个Star
 
