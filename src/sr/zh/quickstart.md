@@ -34,7 +34,7 @@ conda create --name sr-od python=3.11
 3. 安装器中点击 `Git-默认安装` `代码版本-代码同步`
 4. Python虚拟环境点击 `选择已有`，选择刚刚创建环境的 `pythonw.exe`，目录大概如下
 ```shell
-你的目录\anaconda\envs\zzz-od\pythonw.exe
+你的目录\anaconda\envs\sr-od\pythonw.exe
 ```
 5. 安装器中点击 `运行依赖-默认安装`，等待完成。
 6. 安装完成后，安装器上点击`启动一条龙`，或运行 `OneDragon Launcher.exe`
