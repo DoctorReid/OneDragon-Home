@@ -48,7 +48,7 @@ conda create --name sr-od python=3.11
 3. `pip install -r requirements-prod.txt`
 4. 运行 （以下二选一）
     - 复制 `env.sample.bat`，重命名为 `env.bat`，并修改内容为你的虚拟环境的 python 路径，使用 `OneDragon Launcher.exe` 运行。
-    - 将`src`文件夹加入环境变量`PYTHONPATH`，执行 `python src/sr_od/gui/app.py` 。
+    - 将`src`文件夹加入环境变量`PYTHONPATH`，执行 `python src/sr_od/gui/sr_full_app.py` 。
 
 ## 2.使用前须知
 
@@ -75,4 +75,6 @@ conda create --name sr-od python=3.11
 
 ## 3.常见问题
 
-可以到这里查看 [常见问题和解决方案](https://www.kdocs.cn/l/cbSJUUNotJ3Z)
+可以到这里查看 [安装运行常见问题](../../other/zh/common_qa.md)
+
+[常见问题和解决方案](https://www.kdocs.cn/l/cbSJUUNotJ3Z)

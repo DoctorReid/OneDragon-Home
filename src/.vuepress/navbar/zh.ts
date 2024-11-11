@@ -107,6 +107,11 @@ export const zhNavbar = navbar([
     prefix: "/other/zh",
     children: [
       {
+        text: "安装运行常见问题",
+        icon: "question",
+        link: "common_qa"
+      },
+      {
         text: "Github访问指南",
         icon: "globe",
         link: "visit_github"
