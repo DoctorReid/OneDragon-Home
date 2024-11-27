@@ -97,6 +97,10 @@ export const zhNavbar = navbar([
           {
             text: "朱鸢示例",
             link: "zhu_yuan/zhu_yuan_01",
+          },
+          {
+            text: "角色连招示例",
+            link: "character_special/intro",
           }
         ]
       }

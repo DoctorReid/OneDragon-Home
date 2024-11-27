@@ -92,6 +92,10 @@ export const zhSidebar = sidebar({
           link: "zhu_yuan/zhu_yuan_01",
         },
         {
+          text: "角色连招示例",
+          link: "character_special/intro",
+        },
+        {
           text: "冷知识",
           link: "other/battle_knowledge",
         }
@@ -145,5 +149,11 @@ export const zhSidebar = sidebar({
       text: "03-连携与快速支援",
       link: "zhu_yuan_03",
     },
+  ],
+  "/zzz/zh/auto_battle_guide/character_special/":[
+    {
+      text: "莱特",
+      link: "lighter",
+    }
   ]
 });
