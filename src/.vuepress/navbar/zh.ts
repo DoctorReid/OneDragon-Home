@@ -34,6 +34,16 @@ export const zhNavbar = navbar([
             link: "feat_sim_uni"
           }
         ]
+      },
+      {
+        text: "贡献&开发",
+        prefix: "dev",
+        children: [
+          {
+            text: "说明",
+            link: "contribution",
+          }
+        ]
       }
     ]
   },
@@ -103,6 +113,16 @@ export const zhNavbar = navbar([
             link: "character_special/intro",
           }
         ]
+      },
+      {
+        text: "贡献&开发",
+        prefix: "dev",
+        children: [
+          {
+            text: "说明",
+            link: "contribution",
+          }
+        ]
       }
     ],
   },
@@ -134,7 +154,18 @@ export const zhNavbar = navbar([
   },
   {
     text: "点赞",
-    icon: "heart",
-    link: "/other/zh/like",
+    prefix: "/other/zh/like",
+    children: [
+      {
+        text: "点赞",
+        icon: "heart",
+        link: "like"
+      },
+      {
+        text: "2024赞赏感谢",
+        icon: "heart",
+        link: "thanks_2024"
+      }
+    ]
   }
 ]);
