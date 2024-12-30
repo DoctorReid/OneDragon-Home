@@ -53,8 +53,12 @@ export const zhSidebar = sidebar({
           link: "feat_one_dragon"
         },
         {
-          text: "功能-零号空洞",
+          text: "功能-零号空洞-枯萎之都",
           link: "feat_hollow_zero"
+        },
+        {
+          text: "功能-零号空洞-迷失之地",
+          link: "feat_lost_void"
         },
         {
           text: "功能-战斗助手",
