@@ -166,6 +166,11 @@ export const zhNavbar = navbar([
         link: "like"
       },
       {
+        text: "2025赞赏感谢",
+        icon: "heart",
+        link: "thanks_2025"
+      },
+      {
         text: "2024赞赏感谢",
         icon: "heart",
         link: "thanks_2024"
