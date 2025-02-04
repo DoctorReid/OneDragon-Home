@@ -20,6 +20,7 @@ title: 点赞
 
 感谢小伙伴们的赞赏
 
+- [2025年汇总](thanks_2025.md)
 - [2024年汇总](thanks_2024.md)
 
 ![微信赞赏](/images/sponsor_wechat.png)

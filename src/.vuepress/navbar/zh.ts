@@ -131,6 +131,17 @@ export const zhNavbar = navbar([
     ],
   },
   {
+    text: "小工具",
+    prefix: "/tools/zh",
+    children: [
+      {
+        text: "千机链",
+        icon: "link",
+        link: "script_chainer"
+      }
+    ]
+  },
+  {
     text: "其它",
     prefix: "/other/zh",
     children: [
