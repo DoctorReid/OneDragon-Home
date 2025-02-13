@@ -13,22 +13,22 @@ npm config set registry https://registry.npmmirror.com
 
 初始化
 ```npm
-npm install
+pnpm install
 ```
 
 本地运行
 ```npm
-npm run docs:dev
+pnpm docs:dev
 ```
 
 更新版本
 ```npm
-npx vp-update
+pnpm docs:update-package
 ```
 
 打包
 ```npm
-npm run docs:build
+pnpm docs:build
 ```
 
 [图标](https://fontawesome.com/search?o=r&m=free)
