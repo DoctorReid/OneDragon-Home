@@ -43,8 +43,8 @@ jobs:
         uses: crazy-max/ghaction-github-pages@v4
         with:
           # 部署到 gh-pages 分支
-          repo: OneDragon-Anything/onedragon-anything.github.io
-          target_branch: main
+#          repo: OneDragon-Anything/onedragon-anything.github.io
+          target_branch: gh-pages
           # 部署目录为 VuePress 的默认输出目录
           build_dir: src/.vuepress/dist
         env:
